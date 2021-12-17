@@ -101,6 +101,7 @@
         android:background="@color/maincolor"
         android:text="로그인"
         android:textSize="21dp"
+        android:textStyle="bold"
         android:textColor="@color/white"
         android:layout_marginBottom="45dp"
         app:layout_constraintLeft_toLeftOf="parent"
