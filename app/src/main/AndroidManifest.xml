@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Project_3F4C68">
         <activity
+            android:name=".RequestConfirmActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CategoryRecordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StoreAddActivity"
+            android:exported="false" />
+        <activity
             android:name=".StoreSelctActivity"
             android:exported="false" />
         <activity

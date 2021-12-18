@@ -9,4 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="maincolor">#FF3F4C68</color>
     <color name="maincolor2">#E63F4C68</color>
+    <color name="subcolor">#9DABCB</color>
+    <color name="maybegray">#636363</color>
 </resources>

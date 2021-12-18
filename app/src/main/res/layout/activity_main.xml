@@ -46,43 +46,43 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="아이디"
-        android:textSize="20dp"
+        android:textSize="17dp"
         android:textStyle="bold"
         android:textColor="@color/maincolor"
         android:layout_marginTop="50dp"
-        android:layout_marginRight="17dp"
-        app:layout_constraintRight_toLeftOf="@id/id_edittext"
+        app:layout_constraintRight_toRightOf="@id/password_text"
         app:layout_constraintTop_toBottomOf="@id/title" />
 
     <EditText
         android:id="@+id/id_edittext"
-        android:layout_width="220dp"
+        android:layout_width="200dp"
         android:layout_height="40dp"
         android:layout_marginTop="40dp"
-        android:layout_marginRight="10dp"
-        app:layout_constraintBottom_toTopOf="@id/password_edittext"
-        app:layout_constraintRight_toRightOf="@id/background_view"
-        app:layout_constraintTop_toBottomOf="@id/title" />
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintLeft_toLeftOf="@+id/password_edittext"
+        app:layout_constraintRight_toRightOf="@id/password_edittext" />
 
     <TextView
         android:id="@+id/password_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="비밀번호"
-        android:textSize="20dp"
+        android:textSize="17dp"
         android:textStyle="bold"
         android:textColor="@color/maincolor"
-        android:layout_marginRight="17dp"
+        app:layout_constraintLeft_toLeftOf="@id/background_view"
         app:layout_constraintRight_toLeftOf="@id/password_edittext"
-        app:layout_constraintTop_toBottomOf="@id/id_text" />
+        app:layout_constraintTop_toBottomOf="@id/id_text"
+        app:layout_constraintBottom_toTopOf="@id/id_check"/>
 
     <EditText
         android:id="@+id/password_edittext"
-        android:layout_width="220dp"
+        android:layout_width="200dp"
         android:layout_height="40dp"
-        android:layout_marginRight="10dp"
+        app:layout_constraintLeft_toRightOf="@+id/password_text"
         app:layout_constraintRight_toRightOf="@id/background_view"
-        app:layout_constraintTop_toBottomOf="@id/id_edittext" />
+        app:layout_constraintTop_toBottomOf="@id/id_edittext"
+        />
 
     <CheckBox
         android:id="@+id/id_check"
@@ -92,7 +92,7 @@
         android:layout_marginBottom="10dp"
         android:layout_marginRight="10dp"
         app:layout_constraintRight_toRightOf="@id/background_view"
-        app:layout_constraintBottom_toTopOf="@id/login_button" />
+        app:layout_constraintTop_toBottomOf="@id/password_edittext" />
 
     <Button
         android:id="@+id/login_button"
@@ -106,6 +106,7 @@
         android:layout_marginBottom="45dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/id_check"
         app:layout_constraintBottom_toTopOf="@id/background_view2" />
 
     <TextView
@@ -124,6 +125,7 @@
         android:text="회원가입"
         android:textStyle="bold"
         android:textColor="@color/white"
+        android:background="#00000000"
         android:layout_marginTop="20dp"
         app:layout_constraintTop_toTopOf="@id/background_view2"
         app:layout_constraintLeft_toLeftOf="@id/find_button"/>
@@ -145,6 +147,7 @@
         android:text="아이디/비밀번호 찾기"
         android:textStyle="bold"
         android:textColor="@color/white"
+        android:background="#00000000"
         android:layout_marginBottom="20dp"
         app:layout_constraintBottom_toBottomOf="@id/background_view2"
         app:layout_constraintRight_toRightOf="@id/background_view2"/>
