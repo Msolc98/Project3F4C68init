@@ -111,17 +111,19 @@
         app:layout_constraintBottom_toTopOf="@id/background_view2" />
 
     <TextView
+        android:id="@+id/ask1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="아직 회원이 아니신가요?"
         android:textColor="@color/white"
         android:layout_marginTop="38dp"
-        app:layout_constraintTop_toTopOf="@id/background_view2"
-        app:layout_constraintRight_toLeftOf="@id/signup_button" />
+        app:layout_constraintLeft_toLeftOf="@id/background_view2"
+        app:layout_constraintRight_toLeftOf="@id/signup_button"
+        app:layout_constraintTop_toTopOf="@id/background_view2" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="60dp"
+        android:layout_height="25dp"
         android:id="@+id/signup_button"
         android:text="회원가입"
         android:textStyle="bold"
@@ -129,6 +131,7 @@
         android:background="#00000000"
         android:layout_marginTop="20dp"
         app:layout_constraintTop_toTopOf="@id/background_view2"
+        app:layout_constraintBottom_toTopOf="@id/find_button"
         app:layout_constraintLeft_toLeftOf="@id/find_button"/>
 
     <TextView
@@ -137,21 +140,23 @@
         android:text="아이디를 잊으셨나요?"
         android:textColor="@color/white"
         android:layout_marginBottom="35dp"
-        app:layout_constraintRight_toLeftOf="@id/find_button"
+        app:layout_constraintRight_toRightOf="@id/ask1"
         app:layout_constraintBottom_toBottomOf="@id/background_view2"
 />
 
     <Button
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="25dp"
         android:id="@+id/find_button"
         android:text="아이디/비밀번호 찾기"
         android:textStyle="bold"
         android:textColor="@color/white"
         android:background="#00000000"
         android:layout_marginBottom="20dp"
-        app:layout_constraintBottom_toBottomOf="@id/background_view2"
-        app:layout_constraintRight_toRightOf="@id/background_view2"/>
+        android:layout_marginRight="10dp"
+        app:layout_constraintRight_toRightOf="@id/background_view2"
+        app:layout_constraintTop_toBottomOf="@id/signup_button"
+        app:layout_constraintBottom_toBottomOf="@id/background_view2"/>
 
 
 </android.support.constraint.ConstraintLayout>
